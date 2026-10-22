@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="122dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Ingrese su usuario"
+            android:textColor="#000000"
+            android:textColorHint="#777777"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Ingrese su contraseña"
+            android:textColor="#000000"
+            android:textColorHint="#777777"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Iniciar Sesión"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGetUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Obtener Usuario"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:text="Esperando acción..."
+            android:textSize="15sp"
+            android:textColor="#222222"
+            android:padding="12dp"
+            android:background="#F0F0F0" />
+
+    </LinearLayout>
+</ScrollView>
